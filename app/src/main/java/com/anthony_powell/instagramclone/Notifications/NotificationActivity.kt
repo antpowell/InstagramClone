@@ -1,19 +1,20 @@
-package com.anthony_powell.instagramclone
+package com.anthony_powell.instagramclone.Notifications
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.anthony_powell.instagramclone.R
 import com.anthony_powell.instagramclone.Utils.BottomNavigationViewHelper
 import kotlinx.android.synthetic.main.layout_bottom_navigation_view.*
 
-class CamActivity : AppCompatActivity() {
+class NotificationActivity : AppCompatActivity() {
 
-    private val TAG = "CamActivity"
-    private val ACTIVITY_NUM = 0
+    private val TAG = "NotificationActivity"
+    private val ACTIVITY_NUM = 3
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cam)
+        setContentView(R.layout.activity_notification)
         Log.d(TAG, "onCreate: starting....")
 
         initBottomNav()

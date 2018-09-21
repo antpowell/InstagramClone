@@ -27,10 +27,13 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
     // 1: Design Support Library
     implementation "com.android.support:design:$supportLibraryVersion"
     // 2: CardView
     implementation "com.android.support:cardview-v7:$supportLibraryVersion"
+    // 3: BottomNavigationViewEx
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:1.2.4'
 
 
     testImplementation 'junit:junit:4.12'

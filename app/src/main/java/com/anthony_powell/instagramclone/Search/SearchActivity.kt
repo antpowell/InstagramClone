@@ -1,19 +1,21 @@
-package com.anthony_powell.instagramclone
+package com.anthony_powell.instagramclone.Search
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.anthony_powell.instagramclone.R
 import com.anthony_powell.instagramclone.Utils.BottomNavigationViewHelper
 import kotlinx.android.synthetic.main.layout_bottom_navigation_view.*
 
-class CamActivity : AppCompatActivity() {
+class SearchActivity : AppCompatActivity() {
 
-    private val TAG = "CamActivity"
-    private val ACTIVITY_NUM = 0
+    private val TAG = "SearchActivity"
+    private val ACTIVITY_NUM = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cam)
+        setContentView(R.layout.activity_search)
+
         Log.d(TAG, "onCreate: starting....")
 
         initBottomNav()

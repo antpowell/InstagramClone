@@ -1,22 +1,25 @@
-package com.anthony_powell.instagramclone
+package com.anthony_powell.instagramclone.Home
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.anthony_powell.instagramclone.R
 import com.anthony_powell.instagramclone.Utils.BottomNavigationViewHelper
 import kotlinx.android.synthetic.main.layout_bottom_navigation_view.*
 
-class CamActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
 
-    private val TAG = "CamActivity"
+    private val TAG = "HomeActivity"
     private val ACTIVITY_NUM = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cam)
+        setContentView(R.layout.activity_home)
         Log.d(TAG, "onCreate: starting....")
 
         initBottomNav()
+
     }
 
     private fun initBottomNav(){
@@ -26,5 +29,6 @@ class CamActivity : AppCompatActivity() {
         BottomNavigationViewHelper.enableNavigation(this, bottom_nav_view_bar)
         BottomNavigationViewHelper.setActive(bottom_nav_view_bar, ACTIVITY_NUM)
     }
+
 
 }
