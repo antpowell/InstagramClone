@@ -1,0 +1,92 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--ACCOUNT COUNT VALUES-->
+
+        <TextView
+            android:id="@+id/post_number_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="804"
+            app:layout_constraintStart_toStartOf="@id/post_label"
+            app:layout_constraintEnd_toEndOf="@id/post_label"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/followers_number_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1388"
+            app:layout_constraintStart_toStartOf="@id/followers_label"
+            app:layout_constraintEnd_toEndOf="@id/followers_label"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/following_number_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1370"
+            app:layout_constraintEnd_toEndOf="@id/following_label"
+            app:layout_constraintStart_toStartOf="@id/following_label"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <!--END OF ACCOUNT COUNT VALUES-->
+        <!--ACCOUNT STATUS LABELS-->
+
+        <TextView
+            android:id="@+id/post_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/post_number_label"/>
+
+        <TextView
+            android:id="@+id/following_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Following"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/following_number_label"/>
+
+        <TextView
+            android:id="@+id/followers_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Followers"
+            app:layout_constraintEnd_toStartOf="@id/following_number_label"
+            app:layout_constraintStart_toEndOf="@id/post_number_label"
+            app:layout_constraintTop_toBottomOf="@id/followers_number_label"/>
+        <!--END ACCOUNT STATUS LABELS-->
+        <Button
+            android:id="@+id/edit_profile_label"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+
+            android:text="Edit Profile"
+            app:layout_constraintEnd_toStartOf="@id/following_number_label"
+            app:layout_constraintStart_toEndOf="@id/post_number_label"
+            app:layout_constraintTop_toBottomOf="@id/followers_label"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:background="@drawable/white_grey_button"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+</merge>
+

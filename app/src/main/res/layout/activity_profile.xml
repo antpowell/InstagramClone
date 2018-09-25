@@ -18,7 +18,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true">
 
-            <include layout="@layout/layout_top_tabs" />
+            <include layout="@layout/profile_topbar_snippet" />
         </RelativeLayout>
         <!--middle body-->
         <RelativeLayout
